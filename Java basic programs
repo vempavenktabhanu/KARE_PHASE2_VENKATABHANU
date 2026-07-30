@@ -1,0 +1,17 @@
+//i/p \n
+//o/p  \n
+public class Main
+{
+	public static void main(String[] args) {
+		System.out.println("\\n");
+	}
+}
+//float input to get a two decimal points
+import java.util.*;
+class Main{
+    public static void main(String args[]){
+        Scanner obj = new Scanner(System.in);
+        Float f = obj.nextFloat();
+        System.out.printf("%.2f",f);
+    }
+}
