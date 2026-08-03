@@ -1,3 +1,4 @@
+//palindrome
 import java.util.*;
 class Main{
     public static void main(String[] args){
@@ -14,5 +15,90 @@ class Main{
     System.out.println("Palindrome Number");
     else
     System.out.println("Not a polindrome Number");
+    }
+}
+//write a java program to reverse the number whithout using rightside formation
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+    Scanner obj = new Scanner(System.in);
+    int n = obj.nextInt();
+    int d;
+    while(n!=0)
+    {
+        d = n%10;
+    System.out.print(d);
+    n=n/10;
+    }
+    }
+}
+//write a java program to reverse the number with using rightside formation
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+    Scanner obj = new Scanner(System.in);
+    int n = obj.nextInt();
+    int d,ans=0;
+    while(n!=0)
+    {
+        d=n%10;
+        ans = ans*10+d;
+        n=n/10;
+        System.out.print("Reverse Number :"+ans);
+    }
+    }
+}
+//write a java program on even digits in the given numbers
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+    Scanner obj = new Scanner(System.in);
+    int n = obj.nextInt();
+    int d,ed=0,od=0;
+    while(n!=0)
+    {
+        d=n%10;
+        if(d%2==0)
+        ed++;
+        else
+        od++;
+        n=n/10;
+        System.out.println("odd digit count: "+od);
+        System.out.println("even digit count: "+ed);
+        
+        
+    }
+    }
+}
+//write a java program to count the prime numbers in the given numbers
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+    Scanner obj = new Scanner(System.in);
+    int n = obj.nextInt();
+    int c=0,d;
+    while(n!=0)
+    {
+        d=n%10;
+        if(d==2||d==3||d==4||d==5)
+        c++;
+        n=n/10;
+        System.out.println("Prime digit count: "+c);
+    }
+    }
+}
+//write a java program to count the  number of digits in given numbers
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+    Scanner obj = new Scanner(System.in);
+    int n = obj.nextInt();
+    int c=0;
+    while(n!=0)
+    {
+        n=n/10;
+        c++;
+        System.out.println("no of digits: "+c);
+    }
     }
 }
