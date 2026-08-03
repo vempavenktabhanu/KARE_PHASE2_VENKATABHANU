@@ -102,3 +102,51 @@ class Main{
     }
     }
 }
+
+//HARSHARD NUMBER
+import java.util.*;
+class Main{
+    public static void main(String args[]){
+    Scanner bb = new Scanner(System.in);
+    int n = bb.nextInt();
+    int d,temp=n;
+    int sum=0;
+    while(n!=0)
+    {
+        d=n%10;
+        sum=sum+d;
+        n=n/10;
+    }
+    if(temp%sum==0)
+    System.out.print("HARSHAD NUMBER");
+    else
+    System.out.print("NOT A HARSHAD NUMBER");
+        
+    }
+    
+}
+
+//NEON NUMBER
+import java.util.*;
+class Main{
+    public static void main(String args[]){
+    Scanner bb = new Scanner(System.in);
+    int n = bb.nextInt();
+    int d,temp=n;
+    int sqr=n*n;
+    int sum=0;
+    while(sqr!=0)
+    {
+         sum=sum+sqr%10;
+        sqr=sqr/10;
+    }
+    if(sum==n)
+    System.out.print("NEON NUMBER");
+    else
+    System.out.print("NOT A NEON NUMBER");
+        
+    }
+    
+}
+
+
