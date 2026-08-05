@@ -1,0 +1,20 @@
+//i/p                   o/p
+// 5
+// 10 20 30 40 50        10 20 30 100 50
+import java.util.*;
+class Main{
+    public static void main(String args[]){
+        Scanner obj=new Scanner(System.in);
+        int n = obj.nextInt();
+        int arr[]=new int[n];
+        int i;
+        for(i=0;i<n;i++)
+        arr[i]=obj.nextInt();
+        int ind=obj.nextInt();
+        int val=obj.nextInt();
+        arr[ind]=val;
+        for(i=0;i<n;i++)
+        System.out.print(arr[i]+" ");
+        
+    }
+}
