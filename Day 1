@@ -1,0 +1,134 @@
+//programe to print esacpe sequance of \"\" it string delimeter to escape the string
+class Main{
+    public static void main(String [] args){
+        System.out.print("cse \"KARE\" students");
+    }
+}
+//output:cse \"KARE\" students
+
+//to print \n
+class Main{
+    public static void main(String [] args){
+        System.out.println("\\n");
+    }
+}
+//output:  \n
+
+import java.util.Scanner;
+class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter A value : ");
+        int a=sc.nextInt();
+        System.out.println("A value is: "+a);
+        
+    }
+}//output:A values is :(user data)
+//getting know about scanner class and displaying in display panel
+//
+
+import java.util.Scanner;
+public class Main{
+    public static void main (String args[]){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enetr pi value: ");
+        float pi=sc.nextFloat();
+        System.out.print("Enetred pi value:"+pi);
+    }
+}//output:pi values input of nextFloat
+
+import java.util.Scanner;
+public class Main{
+    public static void main (String args[]){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter character");
+        char f=sc.next().charAt(0);
+        System.out.println("Ther enterd character is "+f);
+        
+        
+    }
+}
+
+//write a java program to get a float number and printit with two decimal point
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+        Scanner sc= new Scanner(System.in);
+        System.out.print("Enter float value: ");
+        float a=sc.nextFloat();
+        System.out.printf("the enter float value %.4f",a);
+        
+    }
+}//format specifier is important usage after printf statement its called format specifier
+
+//write a java program from user to ge a double input from user and print it
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+        Scanner sc= new Scanner(System.in);
+        System.out.print("Enter double value value: ");
+        double a=sc.nextDouble();
+        System.out.printf("the enter double value%.3f ",a);
+    }
+}
+
+class Main{
+    public static void main(String[] args){
+        int a=4;
+        int b=2;
+        int res=a<<b;
+        //left shift operator -->X*2^k
+        System.out.println(res);
+        //output-->16
+        int d=4;
+        int y=3;
+        int c=d>>y;
+        //righ shift operator -->x/2^k
+        System.out.println(c);
+        //output-->0
+    }
+}
+class Main{
+    public static void main(String[] args){
+      int a=5;
+      int b=3;
+      int res=a&b;
+      System.out.println("the and opeation between a=5 and b=3 is :-->"+res);
+      int d=5;
+      int e=4;
+      int resu=d^e;
+      System.out.println("the xor opration between d =5and e=4 is -->"+resu);
+      int result=d|e;
+      System.out.println("the or operation between 5 and 4 is :-->"+result);
+      int ans=a^d;
+      System.out.println("the xor operation of same numbers is :"+ans);
+      //the xor operation same numbers is always 0 ---->2^2=0
+      int z=0;
+      System.out.println("the xor operation with 0 is :"+(a^z));
+      //the xor operation of any number with 0 is that same number-->2^0=2 
+    }
+}
+
+import java.util.Scanner;
+class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int a=sc.nextInt();
+        int b=a++,c=b--,d=--c,e=d++,f=e--;
+        System.out.println("a value"+a);
+        System.out.println("b value"+b);
+        System.out.println("c value"+c);
+        System.out.println("e value"+e);
+        System.out.println("f value"+f);
+        System.out.println(f++);
+        System.out.println("f value"+(f++));
+    }
+}//post incremnt and pre increment
+//99
+a value100
+b value98
+c value98
+e value97
+f value98
+98
+f value99
