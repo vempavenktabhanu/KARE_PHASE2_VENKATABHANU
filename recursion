@@ -1,0 +1,73 @@
+/*
+WjP to print nth term of fibnoci seriesusing recursion
+*/
+import java.util.*;
+public class Main
+{
+    static int fib(int n){
+        if(n<=1){
+            return 1;
+        }
+        return fib(n-1)+fib(n-2);
+        
+    }
+	public static void main(String[] args) {
+	Scanner sc=new Scanner(System.in);
+	int n=sc.nextInt();
+	int ans=fib(n);
+	System.out.print("fibnoci series for upto n value "+ans);
+		}
+}
+//parameterized constructor
+class Student{
+        int rollno;
+        String name;
+        Student(int r,String n){
+            this.rollno=r;
+            this.name=n;
+        }
+        void Display(){
+            System.out.print(rollno+" "+name);
+        }
+    public static void main(String[] args){
+        Student s = new Student(60,"Bhanu"); 
+        Student m=new Student(12,"Bhanu");
+        m.Display();
+        s.Display();
+    }
+}
+//parametrized constructor
+import java.util.*;
+class Student{
+    int rollno;
+    String name;
+    Student(int r,String n){
+        this.rollno=r;
+        this.name=n;
+    }
+    Student(Student obj){
+        obj.rollno=21;
+    }
+    void display(){
+        System.out.println(rollno+" "+name);
+    }
+    public static void main(String[] args){
+        Student po = new Student(90,"Bhanu");
+        Student ps=new Student(po);
+        po.display();
+    }
+}
+
+class Student{
+    
+        int roolno;
+        String name;
+        Student(){
+            System.out.print(roolno+" "+name);
+    }
+    public static void main(String[] args){
+        Student s=new Student();
+    }
+}
+output:
+0 null
